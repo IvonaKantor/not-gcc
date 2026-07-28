@@ -6,3 +6,7 @@
 #include <string>
 
 using namespace std;
+
+struct Compiler {
+    vector <Token> tokens;
+};
