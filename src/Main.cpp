@@ -8,5 +8,8 @@
 using namespace std;
 
 struct Compiler {
+    string source;
     vector <Token> tokens;
 };
+
+extern Compiler compiler;
