@@ -4,6 +4,6 @@
 using namespace std;
 
 class Parser {
-	vector<Token> tokens;
-    size_t position;
+	private vector<Token> tokens;
+    private size_t position;
 }
