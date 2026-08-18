@@ -10,6 +10,7 @@ using namespace std;
 struct Compiler {
     string source;
     vector <Token> tokens;
+	string error;
 };
 
 extern Compiler compiler;
