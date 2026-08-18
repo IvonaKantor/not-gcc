@@ -6,4 +6,5 @@ using namespace std;
 class Parser {
 	private vector<Token> tokens;
     private size_t position;
+	map<string, TokenType> varTable;
 }
