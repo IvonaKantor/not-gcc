@@ -13,3 +13,5 @@ target_compile_options(not-gcc PRIVATE
         -Wall -Wextra -Wpedantic -g
         -fsanitize=address -fsanitize=undefined
 )
+
+target_link_libraries()
