@@ -8,3 +8,8 @@ file(GLOB_RECURSE SOURCES "src/*.cpp")
 file(GLOB_RECURSE HEADERS "src/*.hpp" "src/*.h")
 
 add_executable(not-gcc ${SOURCES} ${HEADERS})
+
+target_compile_options(not-gcc PRIVATE
+        -Wall -Wextra -Wpedantic -g
+        -fsanitize=address -fsanitize=undefined
+)
