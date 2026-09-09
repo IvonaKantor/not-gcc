@@ -15,6 +15,6 @@ target_compile_options(not-gcc PRIVATE
 )
 
 target_link_libraries(not-gcc PRIVATE
-    stdc++
-    -fsanitize=address -fsanitize=undefined
+        stdc++
+        -fsanitize=address -fsanitize=undefined
 )
