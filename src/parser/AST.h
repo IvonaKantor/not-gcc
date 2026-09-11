@@ -8,7 +8,8 @@
 struct ASTNode {
     enum Kind {
         NODE_FUNCTION,
-        NODE_NUMBER
+        NODE_NUMBER,
+        NODE_VARIABLE
     };
 };
 
