@@ -4,6 +4,14 @@
 #include <string>
 #include <vector>
 #include <optional>
+using namespace std;
+
+class Lexer {
+private:
+    string source;
+    size_t position;
+    int line;
+};
 
 
 #endif
