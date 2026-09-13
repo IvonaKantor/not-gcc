@@ -18,7 +18,7 @@ public:
 
     Token nextToken();
 
+    vector<Token> tokenizeAll();
 };
-
 
 #endif
