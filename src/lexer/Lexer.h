@@ -13,6 +13,9 @@ private:
     size_t position;
     int line;
 
+    void skip_whitespace();
+    bool isTheend() const;
+
 public:
     explicit Lexer(const string &source);
 
