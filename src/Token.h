@@ -6,6 +6,12 @@ typedef enum {
     TOKEN_INT,
     TOKEN_EOF,
     TOKEN_ERROR
-}TokenType;
+} TokenType;
+
+typedef struct {
+    TokenType type;
+    char *value;
+    int line;
+} Token;
 
 #endif
