@@ -4,7 +4,6 @@
 #include "Token.h"
 #include <string>
 #include <vector>
-#include <optional>
 using namespace std;
 
 class Lexer {
@@ -13,7 +12,10 @@ private:
     size_t position;
     int line;
 
+    char peek() const;
+
     void skip_whitespace();
+
     bool isTheend() const;
 
 public:
