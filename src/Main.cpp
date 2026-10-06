@@ -9,8 +9,12 @@ using namespace std;
 
 struct Compiler {
     string source;
-    vector <Token> tokens;
-	string error;
+    vector<Token> tokens;
+    string error;
 };
 
-extern Compiler compiler;
+extern "C" {
+Compiler *compiler_create(void) {
+    return new Compiler();
+}
+}
