@@ -17,4 +17,8 @@ extern "C" {
 Compiler *compiler_create(void) {
     return new Compiler();
 }
+
+void compiler_destroy(Compiler *compiler) {
+    delete compiler;
+}
 }
