@@ -21,6 +21,8 @@ private:
 public:
     explicit Lexer(const string &source);
 
+    bool isAtEnd() const;
+
     Token nextToken();
 
     vector<Token> tokenizeAll();
