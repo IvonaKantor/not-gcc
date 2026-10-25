@@ -9,3 +9,8 @@ Lexer::Lexer(const std::string& src)
 bool Lexer::isAtEnd() const {
     return position >= source.length();
 }
+
+char Lexer::peek() const {
+    if (isAtEnd()) return '\0';
+    return source[position];
+}
