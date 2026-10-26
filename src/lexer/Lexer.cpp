@@ -15,3 +15,7 @@ char Lexer::peek() const {
     if (isAtEnd()) return '\0';
     return source[position];
 }
+
+void Lexer::skip_whitespace() {
+
+}
