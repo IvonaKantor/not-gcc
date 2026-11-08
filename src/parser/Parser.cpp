@@ -13,4 +13,8 @@ public:
     explicit Parser(vector<Token> &tokens)
         : tokens(tokens), position(0) {
     }
+
+    unique_ptr<ASTNode> parseProgram() {
+        return praseFunction();
+    }
 };
