@@ -17,4 +17,9 @@ public:
     unique_ptr<ASTNode> parseProgram() {
         return praseFunction();
     }
+
+private:
+    unique_ptr<ASTNode> parseFunction() {
+
+    }
 };
