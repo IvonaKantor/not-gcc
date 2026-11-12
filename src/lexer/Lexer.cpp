@@ -17,5 +17,12 @@ char Lexer::peek() const {
 }
 
 void Lexer::skip_whitespace() {
-
+    while (!isAtEnd()) {
+        char ch = peek();
+        if (isspace(ch)) {
+            position++;
+        }else {
+            break;
+        }
+    }
 }
