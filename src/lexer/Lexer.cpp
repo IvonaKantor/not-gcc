@@ -26,3 +26,7 @@ void Lexer::skip_whitespace() {
         }
     }
 }
+
+Token Lexer::nextToken() {
+    skip_whitespace();
+}
